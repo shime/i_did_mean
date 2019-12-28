@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "test_helper"
+
 class KeyNameAutocorrectTest < Minitest::Test
   def test_autocorrects_key_name_with_fetch
     assert_autocorrects %(

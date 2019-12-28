@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "test_helper"
+
 class VariableNameCheckTest < Minitest::Test
   def test_autocorrects_method_typo
     assert_autocorrects %(
