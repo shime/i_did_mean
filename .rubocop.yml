@@ -1,0 +1,52 @@
+---
+require:
+ - rubocop-minitest
+
+Style/Documentation:
+ Enabled: false
+
+Metrics/LineLength:
+ Enabled: true
+ Max: 100
+ Exclude:
+  - 'test/**/*'
+  - 'Gemfile'
+ IgnoredPatterns: ['^\s*#']  # ignore comments
+
+Metrics/ClassLength:
+ Exclude:
+  - 'test/**/*'
+
+Metrics/AbcSize:
+ Exclude:
+  - 'test/**/*'
+
+Metrics/MethodLength:
+ Enabled: false
+
+Metrics/BlockLength:
+ Enabled: false
+
+Style/ClassAndModuleChildren:
+ Enabled: false
+
+Style/StringLiterals:
+ Enabled: true
+ EnforcedStyle: double_quotes
+
+Style/NumericLiteralPrefix:
+ Enabled: false
+
+Style/NumericLiterals:
+ Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+ Enabled: true
+ EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+ Enabled: true
+ EnforcedStyleForMultiline: comma
+
+Naming/MemoizedInstanceVariableName:
+ Enabled: false
