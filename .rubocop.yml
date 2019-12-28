@@ -2,6 +2,10 @@
 require:
  - rubocop-minitest
 
+AllCops:
+ Exclude:
+  - 'gemfiles/**/*'
+
 Style/Documentation:
  Enabled: false
 

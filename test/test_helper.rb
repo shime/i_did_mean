@@ -5,7 +5,7 @@ require "minitest/focus"
 
 def skip_on_load_errors
   yield
-rescue LoadError # rubocop:disable Lint/HandleExceptions
+rescue LoadError # rubocop:disable Lint/SuppressedException
 end
 
 module IDidMean::FileTestHelpers
