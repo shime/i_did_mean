@@ -5,8 +5,4 @@ rvm:
   - 2.6.5
 
 script:
-  - rubocop && bundle exec appraisal rake test
-
-before_script:
-  - bundle install
-  - bundle exec appraisal install
+  - rubocop && bundle exec rake test
