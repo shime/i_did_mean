@@ -13,7 +13,7 @@ module IDidMean
     end
 
     def call
-      return unless File.exist?(file)
+      return unless file && File.exist?(file) 
 
       if should_process?
         replace_line(number)
