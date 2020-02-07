@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "test_helper"
+require "i_did_mean"
 
 class HandlingUnknownErrorsTest < Minitest::Test
   class ObscureError

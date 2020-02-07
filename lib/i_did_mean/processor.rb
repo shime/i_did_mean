@@ -13,6 +13,8 @@ module IDidMean
     end
 
     def call
+      return unless File.exist?(file)
+
       if should_process?
         replace_line(number)
         replace_formatter
