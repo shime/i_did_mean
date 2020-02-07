@@ -25,6 +25,7 @@ skip_on_load_errors do
 
     def test_should_correct_method_name
       get "/"
+      sleep 5
       text = File.read(FIXTURE_PATH)
 
       refute_match(/atofix_me/, text)
